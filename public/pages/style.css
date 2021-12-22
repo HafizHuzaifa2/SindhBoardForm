@@ -1,0 +1,146 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+body {
+    background-image: linear-gradient(pink, yellow, white, green);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text_title {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+input {
+    width: 100%;
+    background-color: lightcyan;
+    padding: 5px 2px;
+    box-shadow: none;
+    padding: 0px 10px;
+    border: solid lightsalmon;
+    border-width: 2px;
+}
+
+input:focus {
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    background-color: lightgray;
+    font-size: 20px;
+}
+
+input:hover {
+    background-color: lightgray;
+}
+
+input::placeholder {
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
+
+fieldset {
+    width: 100%;
+    box-align: center;
+    background-color: rgba(0, 71, 118, 0.467);
+    padding: 10px;
+    font-size: 20px;
+    border: solid aqua;
+    border-width: 4px;
+}
+
+table {
+    width: 100%;
+    font-size: 20px;
+    align-self: center;
+    border: none;
+}
+
+.one {
+    font-size: 25px;
+    font-weight: 200;
+    text-shadow: 2px 2px 2px red;
+}
+
+.five {
+    margin: auto;
+    align-items: center;
+    width: 400px;
+    margin: center;
+    display: block;
+    height: 370px;
+}
+
+.two {
+    font-size: 90px;
+    color: green;
+    text-align: center;
+}
+
+.three {
+    font-size: 60px;
+    color: blueviolet;
+    text-align: center;
+}
+
+.four {
+    font-size: 80px;
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+legend {
+    text-shadow: 2px 2px 2px red;
+}
+
+h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px 2px yellow;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.immg {
+    height: 180px;
+    width: 150px;
+    padding-top: 40px;
+}
+
+.box {
+    font-size: 20px;
+    font-style: oblique;
+    background-color: rgb(213, 255, 128)
+}
+#accounts,#personals,#submits{
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    img {
+        width: 100px;
+    }
+    .immg {
+        width: 80px;
+        height: 80px;
+    }
+}

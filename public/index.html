@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="pages/style.css">
+
+
+    <title class="fs-4  me-auto">Board Of Intermediate Education , Karachi. </title>
+</head>
+
+<body>
+
+
+    <div class="text-center" id="firstpage">
+
+        <h1 class="fs-2 text_title text-center fw-bold">Board Of Intermediate Education, Karachi.
+            <hr>
+
+            <p style="text-decoration: none;"> EXAMINATION FORM FOR H.S.C. PART-I COMMERCE GROUP FOR PRIVATE CANDIDATES
+                ANNUAL </p>
+
+            <h2> This form contains following section</h2>
+            <h3 onclick="location.href='pages/index1.html' "> Account Details</h3>
+            <h3 onclick="location.href='pages/index2.html' "> Personal Details</h3>
+            <h3 onclick="location.href='pages/index3.html' "> Review Section</h3>
+            <p> Click below to start. </p>
+
+            <p class="fw-bold fs-2"> Registration Year:
+                <select class="box" name="opinion" aria-label="Select Option" id="year">
+                    <option value="19">2019</option>
+                    <option value="20">2020</option>
+                    <option value="21">2021</option>
+                </select>
+            </p>
+            <p>
+                <img width="150px" onclick="account()" src="pages/imgs/start.png" alt="Start">
+            </p>
+
+    </div>
+    <div class="row m-3" id="accounts">
+
+        <table class="text-center my-4">
+            <tbody>
+                <tr>
+                    <td class="one" style="background-color: #e9c46a;"><b> Step 1: Account </b></td>
+                    <td style="background-color: cyan;"> Step 2: Personal </td>
+
+                </tr>
+            </tbody>
+        </table>
+        <form class="p-3">
+            <fieldset>
+                <legend class="text-center">
+                    <h2>Account</h2>
+                </legend>
+
+
+                <p> <label for="Roll no">Enter Roll# :</label></p>
+                <p><input class="box" required type="text" name="Roll no" id="Roll no" placeholder="Enter Roll no"></p>
+                <p> <label for="Marks">Marks of Identification: </label></p>
+                <p> <input class="box" required placeholder="Enter Obtained Marks" type="number" name="Marks"
+                        id="Marks"> </p>
+
+
+                <p> <label for="Email">Email Address:</label></p>
+                <p> <input class="box" required placeholder="Enter Email" type="Email" name="Email" id="Email"> </p>
+                <p> <label for="password">Password:</label></p>
+                <p><input class="box" required type="password" name="password" id="password"
+                        placeholder="Enter Password"></p>
+                <p> <label for="confirm password">Confirm Password:</label></p>
+                <p> <input class="box" required type="password" name="confirm password" id="confirm password"
+                        placeholder="confirm password"></p>
+
+                        <label for="subjects1"> Urdu</label><br>
+                <input type="checkbox" id="subjects1" name="subjects" value="Urdu">
+                <label for="subjects2"> English</label><br>
+                <input type="checkbox" id="subjects2" name="subjects" value="Eng">
+                <label for="subjects3"> Islamiat</label><br>
+                <input type="checkbox" id="subjects3" name="subjects" value="Isl">
+                <label for="subjects4"> Maths</label><br>
+                <input type="checkbox" id="subjects4" name="subjects" value="Math">
+                <label for="subjects5"> Physics</label><br>
+                <input type="checkbox" id="subjects5" name="subjects" value="Phy">
+                <label for="subjects6"> Chemistry</label><br>
+                <input type="checkbox" id="subjects6" name="subjects" value="Chem">
+
+
+
+
+                <p> <img width="150px" onclick=" firstpage() " src="pages/imgs/back.png" alt="Back"></button>
+                    <img width="150px" onclick=" personal() " src="pages/imgs/next.png" alt="Next"> </button>
+            </fieldset>
+        </form>
+
+    </div>
+
+    <div class="row m-3" id="personals">
+
+        <table class="text-center p-3 my-3">
+            <tbody>
+                <tr>
+                    <td style="background-color: #58D3F7;">Step 1: Account</td>
+                    <td class="one" style="background-color:  #e9c46a;"><b> Step 2: Personal </b></td>
+
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+            <fieldset>
+                <legend class="text-center">
+                    <h2> Personal Details</h2>
+                </legend>
+                <p><label for="first name">First Name:</label></p>
+                <p><input class="box" required placeholder="Enter First Name" type="text" name="first name"
+                        id="first name"></p>
+                <div id="sff"></div>
+                <p><label for="last name">Last Name:</label></p>
+                <p><input class="box" required placeholder="Enter Last Name" type="text" name="last name"
+                        id="last name"></p>
+                <p><label for="Father name">Father Name:</label></p>
+                <p><input class="box" required placeholder="Enter Father Name" type="text" name="Father name"
+                        id="Father name"></p>
+                <p><label for="Address">Address:</label></p>
+                <p><input class="box" required placeholder="Enter Address" type="text" name="Address" id="Address"></p>
+                <p><label for="cnic">CNIC:</label></p>
+                <p><input type="text" placeholder="Enter CNIC" name="CNIC" id="cnic"></p>
+
+                <p><label for="Contact">Contact#:</label></p>
+                <p><input class="box" required placeholder="Enter Contact#" type="tel" name="Contact" id="Contact"></p>
+                <p><label for="Post code">Post code:</label></p>
+                <p><input class="box" required placeholder="Enter Post code" type="number" name="Post code"
+                        id="Post code"></p>
+
+                <p><label for="DOB">DOB: </label></p>
+                <p><input type="date" placeholder="Enter DOB" name="DOB" id="DOB"></p>
+                <!-- <p>Gender:</p>
+                <p><label for="male">Male</label>
+                    <input class="box" type="radio" name="gender" id="male">
+                    <label for="female">Female</label>
+                    <input class="box" type="radio" name="gender" id="female">
+                    <label for="others">Others</label>
+                    <input class="box" type="radio" name="gender" id="others"> -->
+
+                <p> DOB:
+                    <select class="box" name="opinion" aria-label="Select Option" id="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Christian</option>
+                    </select>
+                </p>
+                <p> Religion:
+                    <select class="box" name="opinion" aria-label="Select Option" id="religion">
+                        <option value="Islam">Islam</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Christian">Christian</option>
+                    </select>
+                </p>
+                <p> Nationality:
+                    <select class="box" name="opinion" aria-label="Select Option" id="nationality">
+                        <option value="Pakistani">Pakistani</option>
+                        <option value="Indian">Indian</option>
+                        <option value="Iran">Iran</option>
+                    </select>
+                </p>
+
+
+
+
+
+                <p><label for="Img">Image:</label></p>
+                <p><input class="box immg" placeholder="image" type="file" name="Img" id="Img"></p>
+                <p>
+                    <img width="150px" src="pages/imgs/back.png" onclick=" account() " alt="Back">
+                    <img width="150px" onclick="SubmitPage() " src="pages/imgs/submit.png" alt="submit">
+
+            </fieldset>
+        </form>
+
+
+    </div>
+
+
+    <div class="row m-3 fw-bold fs-2" id="submits">
+        <p id="years"></p>
+        <p id="s"></p>
+        <p id="t"></p>
+        <p id="z"></p>
+        <p id="u"></p>
+        <p id="v"></p>
+        <p id="w"></p>
+        <p id="x"></p>
+        <p id="y"></p>
+        <p id="aa"></p>
+        <p id="ab"></p>
+        <p id="ac"></p>
+        <p id="ad"></p>
+        <p id="ae"></p>
+        <p id="af"></p>
+        <p id="ag"></p>
+        <p id="ah"></p>
+        <!-- <p id="subjectsa"></p>
+        <p id="subjectsb"></p>
+        <p id="subjectsc"></p>
+        <p id="subjectsd"></p>
+        <p id="subjectse"></p>
+        <p id="subjectsf"></p> -->
+        <p id="ai"></p>
+
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="pages/App.js"></script>
+
+</body>
+
+
+</html>
